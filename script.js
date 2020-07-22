@@ -45,7 +45,7 @@ q3a4.addEventListener("click", saturn);
 function mars() {
   marsScore += 1;
   questionCount += 1;
-  alert("One point to Mars!");
+  //alert("One point to Mars!");
   if (questionCount >= 3) {
     updateResult();
   }
@@ -53,7 +53,7 @@ function mars() {
 function venus() {
   venusScore += 1;
   questionCount += 1;
-  alert("One point to Venus!");
+  //alert("One point to Venus!");
   if (questionCount >= 3) {
     updateResult();
   }
@@ -61,7 +61,7 @@ function venus() {
 function jupiter() {
   jupiterScore += 1;
   questionCount += 1;
-  alert("One point to Jupiter!");
+  //alert("One point to Jupiter!");
   if (questionCount >= 3) {
     updateResult();
   }
@@ -69,10 +69,26 @@ function jupiter() {
 function saturn() {
   saturnScore += 1;
   questionCount += 1;
-  alert("One point to Saturn!");
+  //alert("One point to Saturn!");
   if (questionCount >= 3) {
     updateResult();
   }
 }
 
-function 
+function updateResult() {
+  if (marsScore >=2){
+    result.innerHTML = "Mars!";
+  }
+  else if (venusScore >=2){
+    result.innerHTML = "Venus!";
+  }
+  else if (jupiterScore >=2){
+    result.innerHTML = "Jupiter!";
+  }
+  else if (saturnScore >=2){
+     result.innerHTML = "Saturn!";
+  }
+  else{
+     result.innerHTML = "Hmm... It looks like you are an exoplanet! They're beyond our own solar system.";
+  }
+}
