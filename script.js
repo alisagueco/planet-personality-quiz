@@ -25,6 +25,8 @@ var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
 //# Results
 var result = document.getElementById("result");
+//# Restart Button
+var restart = document.getElementById("restart");
 //#TODO: Add Event Listeners to your answer choice variables.
 //# First Quiz Question
 q1a1.addEventListener("click", mars);
@@ -41,6 +43,8 @@ q3a1.addEventListener("click", mars);
 q3a2.addEventListener("click", venus);
 q3a3.addEventListener("click", jupiter);
 q3a4.addEventListener("click", saturn);
+//# Restart Button
+restart.addEventListener("click", restartQuiz);
 //#TODO: Define quiz functions here
 function mars() {
   marsScore += 1;
@@ -91,4 +95,9 @@ function updateResult() {
   else{
      result.innerHTML = "Hmm... It looks like you are an exoplanet! They're beyond our own solar system.";
   }
+}
+//Restart Button
+function restartQuiz () {
+  result.innerHTML = "Your result is...";
+  
 }
