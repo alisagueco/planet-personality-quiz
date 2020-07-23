@@ -52,10 +52,10 @@ function mars() {
   questionCount += 1;
   //alert("One point to Mars!");
   //Disables buttons in first question after pressing Beach;
-  //document.getElementById("q1a1").disabled = true;
-  //document.getElementById("q1a2").disabled = true;
-  //document.getElementById("q1a3").disabled = true;
-  //document.getElementById("q1a4").disabled = true;
+  document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
@@ -66,10 +66,10 @@ function venus() {
   questionCount += 1;
   //alert("One point to Venus!");
   //Disables buttons in first question after pressing City;
-  //document.getElementById("q1a1").disabled = true;
-  //document.getElementById("q1a2").disabled = true;
-  //document.getElementById("q1a3").disabled = true;
-  //document.getElementById("q1a4").disabled = true;
+  document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
@@ -79,10 +79,10 @@ function jupiter() {
   questionCount += 1;
   //alert("One point to Jupiter!");
   //Disables buttons in first question after pressing Park;
-  //document.getElementById("q1a1").disabled = true;
-  //document.getElementById("q1a2").disabled = true;
-  //document.getElementById("q1a3").disabled = true;
-  //document.getElementById("q1a4").disabled = true;
+  document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
@@ -92,10 +92,10 @@ function saturn() {
   questionCount += 1;
   //alert("One point to Saturn!");
   //Disables buttons in first question after pressing Festival;
-  //document.getElementById("q1a1").disabled = true;
-  //document.getElementById("q1a2").disabled = true;
-  //document.getElementById("q1a3").disabled = true;
-  //document.getElementById("q1a4").disabled = true;
+  document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
@@ -107,7 +107,7 @@ function updateResult() {
       "Mars! You love having fun, but enjoy deep meaningful conversations as well. All your friends trust you the most with secrets.";
   } else if (venusScore >= 2) {
     result.innerHTML =
-      "Venus! You won't take crap from anyone, probably never sleep, and are always living like there's no tommmorow.";
+      "Venus! You won't take crap from anyone, probably never sleep because of how busy you are, and are always living like there's no tommorow.";
   } else if (jupiterScore >= 2) {
     result.innerHTML =
       "Jupiter! You have a big heart, a carefree spirit, and love nature.";
@@ -116,29 +116,29 @@ function updateResult() {
       "Saturn! You're very creative, have confident steps, and everyone loves your smile.";
   } else {
     result.innerHTML =
-      "Hmm... It looks like you are an exoplanet! They're beyond our own solar system.";
+      "Hmm... It looks like you are an exoplanet! They are beyond our solar system. Just like these type of planets, you always think of innovative ideas have a unique personality.";
   }
 }
 //Restart Button
 function restartQuiz() {
   result.innerHTML = "Your result is...";
-  var questionCount = 0;
-  var marsScore = 0;
-  var venusScore = 0;
-  var jupiterScore = 0;
-  var saturnScore = 0;
-  //document.getElementById("q1a1").disabled = false;
-  //document.getElementById("q1a2").disabled = false;
-  //document.getElementById("q1a3").disabled = false;
-  //document.getElementById("q1a4").disabled = false;
+  questionCount = 0;
+  marsScore = 0;
+  venusScore = 0;
+  jupiterScore = 0;
+  saturnScore = 0;
+  document.getElementById("q1a1").disabled = false;
+  document.getElementById("q1a2").disabled = false;
+  document.getElementById("q1a3").disabled = false;
+  document.getElementById("q1a4").disabled = false;
 
-  //document.getElementById("q2a1").disabled = false;
-  //document.getElementById("q2a2").disabled = false;
-  //document.getElementById("q2a3").disabled = false;
-  // document.getElementById("q2a4").disabled = false;
+  document.getElementById("q2a1").disabled = false;
+  document.getElementById("q2a2").disabled = false;
+  document.getElementById("q2a3").disabled = false;
+  document.getElementById("q2a4").disabled = false;
 
-  //document.getElementById("q3a1").disabled = false;
-  //document.getElementById("q3a2").disabled = false;
-  //document.getElementById("q3a3").disabled = false;
-  //document.getElementById("q3a4").disabled = false;
+  document.getElementById("q3a1").disabled = false;
+  document.getElementById("q3a2").disabled = false;
+  document.getElementById("q3a3").disabled = false;
+  document.getElementById("q3a4").disabled = false;
 }
