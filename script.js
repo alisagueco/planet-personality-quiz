@@ -29,27 +29,33 @@ var result = document.getElementById("result");
 var restart = document.getElementById("restart");
 //#TODO: Add Event Listeners to your answer choice variables.
 //# First Quiz Question
-q1a1.addEventListener("click", mars);
-q1a2.addEventListener("click", venus);
-q1a3.addEventListener("click", jupiter);
-q1a4.addEventListener("click", saturn);
+q1a1.addEventListener("click", mars1);
+q1a2.addEventListener("click", venus1);
+q1a3.addEventListener("click", jupiter1);
+q1a4.addEventListener("click", saturn1);
 //# Second Quiz Question
-q2a1.addEventListener("click", mars);
-q2a2.addEventListener("click", venus);
-q2a3.addEventListener("click", jupiter);
-q2a4.addEventListener("click", saturn);
+q2a1.addEventListener("click", mars2);
+q2a2.addEventListener("click", venus2);
+q2a3.addEventListener("click", jupiter2);
+q2a4.addEventListener("click", saturn2);
 //# Third Quiz Question
-q3a1.addEventListener("click", mars);
-q3a2.addEventListener("click", venus);
-q3a3.addEventListener("click", jupiter);
-q3a4.addEventListener("click", saturn);
+q3a1.addEventListener("click", mars3);
+q3a2.addEventListener("click", venus3);
+q3a3.addEventListener("click", jupiter3);
+q3a4.addEventListener("click", saturn3);
 //# Restart Button
 restart.addEventListener("click", restartQuiz);
 //#TODO: Define quiz functions here
-function mars() {
+function mars1() {
   marsScore += 1;
   questionCount += 1;
   //alert("One point to Mars!");
+  //Disables Buttons after answering first question
+  document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
+
   if (questionCount >= 3) {
     updateResult();
   }
@@ -58,6 +64,11 @@ function venus() {
   venusScore += 1;
   questionCount += 1;
   //alert("One point to Venus!");
+  //Disables Buttons after answering first question
+  document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
@@ -66,6 +77,11 @@ function jupiter() {
   jupiterScore += 1;
   questionCount += 1;
   //alert("One point to Jupiter!");
+  //Disables Buttons after answering first question
+  document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
@@ -74,30 +90,50 @@ function saturn() {
   saturnScore += 1;
   questionCount += 1;
   //alert("One point to Saturn!");
+  //Disables Buttons after answering first question
+  document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
 }
 
 function updateResult() {
-  if (marsScore >=2){
+  if (marsScore >= 2) {
     result.innerHTML = "Mars!";
-  }
-  else if (venusScore >=2){
+  } else if (venusScore >= 2) {
     result.innerHTML = "Venus!";
-  }
-  else if (jupiterScore >=2){
+  } else if (jupiterScore >= 2) {
     result.innerHTML = "Jupiter!";
-  }
-  else if (saturnScore >=2){
-     result.innerHTML = "Saturn!";
-  }
-  else{
-     result.innerHTML = "Hmm... It looks like you are an exoplanet! They're beyond our own solar system.";
+  } else if (saturnScore >= 2) {
+    result.innerHTML = "Saturn!";
+  } else {
+    result.innerHTML =
+      "Hmm... It looks like you are an exoplanet! They're beyond our own solar system.";
   }
 }
 //Restart Button
-function restartQuiz () {
+function restartQuiz() {
   result.innerHTML = "Your result is...";
-  
+  var questionCount = 0;
+  var marsScore = 0;
+  var venusScore = 0;
+  var jupiterScore = 0;
+  var saturnScore = 0;
+  document.getElementById("q1a1").disabled = false;
+  document.getElementById("q1a2").disabled = false;
+  document.getElementById("q1a3").disabled = false;
+  document.getElementById("q1a4").disabled = false;
+
+  document.getElementById("q2a1").disabled = false;
+  document.getElementById("q2a2").disabled = false;
+  document.getElementById("q2a3").disabled = false;
+  document.getElementById("q2a4").disabled = false;
+
+  document.getElementById("q3a1").disabled = false;
+  document.getElementById("q3a2").disabled = false;
+  document.getElementById("q3a3").disabled = false;
+  document.getElementById("q3a4").disabled = false;
 }
