@@ -107,7 +107,7 @@ function updateResult() {
       "Mars! You love having fun, but enjoy deep meaningful conversations as well. All your friends trust you the most with secrets.";
   } else if (venusScore >= 2) {
     result.innerHTML =
-      "Venus! You won't take crap from anyone, probably never sleep because of how busy you are, and are always living like there's no tommorow.";
+      "Venus! You're confident, probably never sleep because of how busy you are, and are always living like there's no tommorow.";
   } else if (jupiterScore >= 2) {
     result.innerHTML =
       "Jupiter! You have a big heart, a carefree spirit, and love nature.";

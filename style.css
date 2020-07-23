@@ -3,7 +3,8 @@
 body {
   /*font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;*/
   margin: 2em;
-  font-family: "Poiret One", cursive;
+  font-family: "Space Mono", monospace;
+  background-img
 }
 
 h1 {
@@ -12,23 +13,22 @@ h1 {
 }
 
 h2 {
-  margin-top: 2em; 
+  margin-top: 2em;
 }
 
 .question {
   display: flex;
   margin-top: 2em;
 }
-  
+
 .answer-choice img {
   height: 10em;
   min-width: 15em;
   max-width: 15em;
-  
 }
 
 .question {
-    display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
