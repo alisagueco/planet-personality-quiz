@@ -1,8 +1,9 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  /*font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;*/
   margin: 2em;
+  font-family: "Poiret One", cursive;
 }
 
 h1 {
@@ -21,5 +22,15 @@ h2 {
   
 .answer-choice img {
   height: 10em;
+  min-width: 15em;
+  max-width: 15em;
   
+}
+
+.question {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
