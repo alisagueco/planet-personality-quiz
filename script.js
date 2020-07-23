@@ -29,24 +29,25 @@ var result = document.getElementById("result");
 var restart = document.getElementById("restart");
 //#TODO: Add Event Listeners to your answer choice variables.
 //# First Quiz Question
-q1a1.addEventListener("click", mars1);
-q1a2.addEventListener("click", venus1);
-q1a3.addEventListener("click", jupiter1);
-q1a4.addEventListener("click", saturn1);
+q1a1.addEventListener("click", mars);
+q1a2.addEventListener("click", venus);
+q1a3.addEventListener("click", jupiter);
+q1a4.addEventListener("click", saturn);
 //# Second Quiz Question
-q2a1.addEventListener("click", mars2);
-q2a2.addEventListener("click", venus2);
-q2a3.addEventListener("click", jupiter2);
-q2a4.addEventListener("click", saturn2);
+q2a1.addEventListener("click", mars);
+q2a2.addEventListener("click", venus);
+q2a3.addEventListener("click", jupiter);
+q2a4.addEventListener("click", saturn);
 //# Third Quiz Question
-q3a1.addEventListener("click", mars3);
-q3a2.addEventListener("click", venus3);
-q3a3.addEventListener("click", jupiter3);
-q3a4.addEventListener("click", saturn3);
+q3a1.addEventListener("click", mars);
+q3a2.addEventListener("click", venus);
+q3a3.addEventListener("click", jupiter);
+q3a4.addEventListener("click", saturn);
 //# Restart Button
 restart.addEventListener("click", restartQuiz);
 //#TODO: Define quiz functions here
-function mars1() {
+//Functions Relating to First Question!!!
+function mars() {
   marsScore += 1;
   questionCount += 1;
   //alert("One point to Mars!");
@@ -59,7 +60,7 @@ function mars1() {
   if (questionCount >= 3) {
     updateResult();
   }
-}
+
 function venus() {
   venusScore += 1;
   questionCount += 1;
@@ -73,7 +74,7 @@ function venus() {
     updateResult();
   }
 }
-function jupiter() {
+function jupiter1() {
   jupiterScore += 1;
   questionCount += 1;
   //alert("One point to Jupiter!");
@@ -86,7 +87,7 @@ function jupiter() {
     updateResult();
   }
 }
-function saturn() {
+function saturn1() {
   saturnScore += 1;
   questionCount += 1;
   //alert("One point to Saturn!");
