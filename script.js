@@ -29,12 +29,12 @@ var result = document.getElementById("result");
 var restart = document.getElementById("restart");
 //#TODO: Add Event Listeners to your answer choice variables.
 //# First Quiz Question
-q1a1.addEventListener("click", mars);
-q1a2.addEventListener("click", venus);
-q1a3.addEventListener("click", jupiter);
-q1a4.addEventListener("click", saturn);
+q1a1.addEventListener("click", mars1);
+q1a2.addEventListener("click", venus1);
+q1a3.addEventListener("click", jupiter1);
+q1a4.addEventListener("click", saturn1);
 //# Second Quiz Question
-q2a1.addEventListener("click", mars);
+q2a1.addEventListener("click", mars2);
 q2a2.addEventListener("click", venus);
 q2a3.addEventListener("click", jupiter);
 q2a4.addEventListener("click", saturn);
@@ -46,56 +46,44 @@ q3a4.addEventListener("click", saturn);
 //# Restart Button
 restart.addEventListener("click", restartQuiz);
 //#TODO: Define quiz functions here
-//Functions Relating to First Question!!!
-function mars() {
+
+function mars1() {
   marsScore += 1;
   questionCount += 1;
   //alert("One point to Mars!");
-  //Disables Buttons after answering first question
+  //Disables buttons in first question after pressing beach;
   document.getElementById("q1a1").disabled = true;
   document.getElementById("q1a2").disabled = true;
   document.getElementById("q1a3").disabled = true;
   document.getElementById("q1a4").disabled = true;
-
   if (questionCount >= 3) {
     updateResult();
   }
+}
 
 function venus() {
   venusScore += 1;
   questionCount += 1;
   //alert("One point to Venus!");
-  //Disables Buttons after answering first question
-  document.getElementById("q1a1").disabled = true;
-  document.getElementById("q1a2").disabled = true;
-  document.getElementById("q1a3").disabled = true;
-  document.getElementById("q1a4").disabled = true;
+
   if (questionCount >= 3) {
     updateResult();
   }
 }
-function jupiter1() {
+function jupiter() {
   jupiterScore += 1;
   questionCount += 1;
   //alert("One point to Jupiter!");
-  //Disables Buttons after answering first question
-  document.getElementById("q1a1").disabled = true;
-  document.getElementById("q1a2").disabled = true;
-  document.getElementById("q1a3").disabled = true;
-  document.getElementById("q1a4").disabled = true;
+
   if (questionCount >= 3) {
     updateResult();
   }
 }
-function saturn1() {
+function saturn() {
   saturnScore += 1;
   questionCount += 1;
   //alert("One point to Saturn!");
-  //Disables Buttons after answering first question
-  document.getElementById("q1a1").disabled = true;
-  document.getElementById("q1a2").disabled = true;
-  document.getElementById("q1a3").disabled = true;
-  document.getElementById("q1a4").disabled = true;
+
   if (questionCount >= 3) {
     updateResult();
   }
@@ -123,7 +111,7 @@ function restartQuiz() {
   var venusScore = 0;
   var jupiterScore = 0;
   var saturnScore = 0;
-  document.getElementById("q1a1").disabled = false;
+    document.getElementById("q1a1").disabled = false;
   document.getElementById("q1a2").disabled = false;
   document.getElementById("q1a3").disabled = false;
   document.getElementById("q1a4").disabled = false;
