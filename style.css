@@ -1,5 +1,5 @@
 /* CSS files add styling rules to your content */
-/* Color Palette from 
+/* Color Palette from https://mybrandnewlogo.com/color-palette-generator
 .color1 {color: #1769a2;}
 .color2 {color: #1a8ab9;}
 .color3 {color: #6ec1dd;}
@@ -10,12 +10,12 @@ body {
   /*font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;*/
   margin: 2em;
   font-family: "Space Mono", monospace;
-  background-color: #b6edeb
+  background-color: #b6edeb;
 }
 
 h1 {
   font-style: italic;
-  color: ##373fff;
+  color: #373fff;
 }
 
 h2 {
@@ -33,6 +33,7 @@ h2 {
   min-width: 8em;
   max-width: 15em;
   border-radius: 15px;
+  margin-left: 3em;
 }
 
 .question {
@@ -44,7 +45,10 @@ h2 {
 }
 
 button {
-  background-color: #f0efed;
+  background-color: #1769a2;
+  color: #f0efed;
   border-radius: 15px;
   height: 2em;
+  margin-bottom: 2em;
+  margin-left: 5em;
 }
