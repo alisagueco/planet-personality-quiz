@@ -51,11 +51,6 @@ function mars() {
   marsScore += 1;
   questionCount += 1;
   //alert("One point to Mars!");
-  //Disables buttons in first question after pressing Beach;
-  document.getElementById("q1a1").disabled = true;
-  document.getElementById("q1a2").disabled = true;
-  document.getElementById("q1a3").disabled = true;
-  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
@@ -65,11 +60,6 @@ function venus() {
   venusScore += 1;
   questionCount += 1;
   //alert("One point to Venus!");
-  //Disables buttons in first question after pressing City;
-  document.getElementById("q1a1").disabled = true;
-  document.getElementById("q1a2").disabled = true;
-  document.getElementById("q1a3").disabled = true;
-  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
@@ -78,11 +68,6 @@ function jupiter() {
   jupiterScore += 1;
   questionCount += 1;
   //alert("One point to Jupiter!");
-  //Disables buttons in first question after pressing Park;
-  document.getElementById("q1a1").disabled = true;
-  document.getElementById("q1a2").disabled = true;
-  document.getElementById("q1a3").disabled = true;
-  document.getElementById("q1a4").disabled = true;
   if (questionCount >= 3) {
     updateResult();
   }
@@ -91,16 +76,12 @@ function saturn() {
   saturnScore += 1;
   questionCount += 1;
   //alert("One point to Saturn!");
-  //Disables buttons in first question after pressing Festival;
-  document.getElementById("q1a1").disabled = true;
-  document.getElementById("q1a2").disabled = true;
-  document.getElementById("q1a3").disabled = true;
-  document.getElementById("q1a4").disabled = true;
+
   if (questionCount >= 3) {
     updateResult();
   }
 }
-
+//Results!!
 function updateResult() {
   if (marsScore >= 2) {
     result.innerHTML =
@@ -142,3 +123,11 @@ function restartQuiz() {
   document.getElementById("q3a3").disabled = false;
   document.getElementById("q3a4").disabled = false;
 }
+//Disable buttons after clicking one answer
+function disableQ1() {
+  q1a1.disabled = true;
+  q1a2.disabled = true;
+  q1a3.disabled = true;
+  q1a4.disabled = true;
+}
+q
