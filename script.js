@@ -130,4 +130,31 @@ function disableQ1() {
   q1a3.disabled = true;
   q1a4.disabled = true;
 }
-q
+q1a1.addEventListener("click", disableQ1);
+q1a2.addEventListener("click", disableQ1);
+q1a3.addEventListener("click", disableQ1);
+q1a4.addEventListener("click", disableQ1);
+
+function disableQ2() {
+  q2a1.disabled = true;
+  q2a2.disabled = true;
+  q2a3.disabled = true;
+  q2a4.disabled = true;
+}
+
+q2a1.addEventListener("click", disableQ2);
+q2a2.addEventListener("click", disableQ2);
+q2a3.addEventListener("click", disableQ2);
+q2a4.addEventListener("click", disableQ2);
+
+function disableQ3() {
+  q3a1.disabled = true;
+  q3a2.disabled = true;
+  q3a3.disabled = true;
+  q3a4.disabled = true;
+}
+
+q3a1.addEventListener("click", disableQ3);
+q3a2.addEventListener("click", disableQ3);
+q3a3.addEventListener("click", disableQ3);
+q3a4.addEventListener("click", disableQ3);
