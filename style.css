@@ -45,8 +45,8 @@ h2 {
 }
 
 button {
-  background-color: #1769a2;
-  color: #f0efed;
+  background-color: #1769a2;#f0efed
+  color: 1769a2;
   border-radius: 15px;
   height: 2em;
   margin-bottom: 2em;
